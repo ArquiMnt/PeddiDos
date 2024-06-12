@@ -1,0 +1,185 @@
+.menu-flotante-perfil {
+    position: fixed;
+    top: calc(50% + 100px);
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid red;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1100;
+}
+.menu-flotante-perfil.mostrar {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+#imageInput {
+    display: none;
+}
+.image-container-perfil {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#image-perfil {
+    max-width: 100%;
+    display: block;
+}
+.bordered-div {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.bordered-div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.boton-recortar-perfil {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton-recortar-perfil:hover {
+    background-color: #218838;
+}
+
+#perfilcontainer{
+    width: 208px;
+    height: 208px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+}
+
+#pc{
+    width: 204px;
+    height: 204px;
+}
+
+#ImagePerfil{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    border-radius: 200px;
+}
+
+#Perfilbutton{
+    border: solid 6px rgb(255, 255, 255);
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-color: #28a745;
+    color: white;
+    z-index: 1;
+    margin-left: 150px;
+    margin-top: 150px;
+    border-radius: 50px;
+}
+
+#Perfilbutton:hover{
+    background: #218838;
+    cursor: pointer;
+}
+
+#cameraicon{
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+
+.AutoPerfilButton {
+    display: flex;
+    justify-content: space-between; /* Esto distribuye los botones con espacio entre ellos */
+    align-items: center;
+    margin-top: 5px;
+}
+
+.gatitosperfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.gatitosbutton {
+    border: none;
+    background: none;
+    padding: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+#AutoPerfilText{
+    margin-top: 20px;
+    padding: 0px;
+
+}
+
+#AutoPerfilText p{
+margin: 0px 0; /* Reduce el espacio entre las líneas */
+color: #145022;
+}
+
+#PerfilText{
+    margin-top: 20px;
+    padding: 0px;
+
+}
+
+#PerfilText p{
+margin: 2px 0;
+color: #145022;
+}
+
+.accountbuttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Esto distribuye los botones con espacio entre ellos */
+    align-items: center;
+}
+
+#btnlogout{
+    background: none;
+    color: rgb(221, 3, 3);
+    border: 2px solid rgb(221, 3, 3);
+}
+
+#btndelete_account{
+    background: rgb(221, 3, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(221, 3, 3);
+}
+
+.btnaccount{
+    width: 165px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.btnaccount:hover{
+    cursor: pointer;
+}
